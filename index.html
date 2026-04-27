@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- TikTok Pixel Code Start -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+  ttq.load('D6RDBFRC77U0SF2NINSG');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<!-- TikTok Pixel Code End -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Genius Wave™ — 7 Minutes to a Clearer Mind</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Space Grotesk', sans-serif;
+    background: #F2F0EB;
+    color: #111;
+    overflow-x: hidden;
+  }
+
+  /* ── TOP BAR ── */
+  .topbar {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 10px 16px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+  }
+  .topbar span { color: #C8F135; }
+
+  /* ── HERO ── */
+  .hero {
+    background: #111;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 32px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Big background number */
+  .hero-bg-num {
+    position: absolute;
+    font-size: 40vw;
+    font-weight: 700;
+    color: rgba(255,255,255,0.03);
+    right: -5vw;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 1;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  /* Accent line */
+  .hero-line {
+    width: 48px;
+    height: 3px;
+    background: #C8F135;
+    margin-bottom: 28px;
+  }
+
+  .hero-label {
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    margin-bottom: 20px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.4rem, 8vw, 4.5rem);
+    font-weight: 700;
+    line-height: 1.05;
+    color: #fff;
+    margin-bottom: 24px;
+    letter-spacing: -0.03em;
+    position: relative;
+    z-index: 2;
+  }
+  .hero h1 .accent {
+    color: #C8F135;
+    display: block;
+  }
+
+  .hero-sub {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.5);
+    font-weight: 300;
+    max-width: 480px;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-cta {
+    display: inline-block;
+    background: #C8F135;
+    color: #111;
+    text-decoration: none;
+    padding: 18px 36px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-radius: 2px;
+    transition: all 0.2s;
+    position: relative;
+    z-index: 2;
+    max-width: 400px;
+    text-align: center;
+    display: block;
+  }
+  .hero-cta:hover { background: #d4f547; transform: translateY(-1px); }
+
+  .hero-cta-sub {
+    font-size: 0.7rem;
+    color: rgba(255,255,255,0.25);
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* Stats row */
+  .hero-stats {
+    display: flex;
+    gap: 0;
+    margin-top: 48px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding-top: 24px;
+    position: relative;
+    z-index: 2;
+  }
+  .hero-stat {
+    flex: 1;
+    padding-right: 20px;
+    border-right: 1px solid rgba(255,255,255,0.08);
+    margin-right: 20px;
+  }
+  .hero-stat:last-child { border-right: none; margin-right: 0; }
+  .hero-stat-num {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #C8F135;
+    line-height: 1;
+    letter-spacing: -0.03em;
+  }
+  .hero-stat-label {
+    font-size: 0.68rem;
+    color: rgba(255,255,255,0.3);
+    margin-top: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  /* ── WHAT IT IS ── */
+  .what {
+    background: #F2F0EB;
+    padding: 72px 32px;
+  }
+  .section-num {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 16px;
+  }
+  .section-title {
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    font-weight: 700;
+    line-height: 1.15;
+    color: #111;
+    margin-bottom: 20px;
+    letter-spacing: -0.02em;
+    max-width: 580px;
+  }
+  .section-body {
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #555;
+    font-weight: 300;
+    max-width: 560px;
+    margin-bottom: 36px;
+  }
+
+  /* Feature cards */
+  .feature-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    max-width: 580px;
+  }
+  .feature-card {
+    background: #fff;
+    border-radius: 4px;
+    padding: 20px 18px;
+    border: 1px solid #E5E3DE;
+    transition: transform 0.2s;
+  }
+  .feature-card:hover { transform: translateY(-2px); }
+  .feature-card-icon { font-size: 1.5rem; margin-bottom: 10px; display: block; }
+  .feature-card-title { font-size: 0.9rem; font-weight: 600; color: #111; margin-bottom: 4px; }
+  .feature-card-desc { font-size: 0.78rem; color: #777; line-height: 1.55; font-weight: 300; }
+
+  /* ── HOW IT WORKS ── */
+  .how {
+    background: #111;
+    padding: 72px 32px;
+  }
+  .how .section-num { color: rgba(255,255,255,0.25); }
+  .how .section-title { color: #fff; max-width: 580px; }
+  .how .section-title .accent { color: #C8F135; }
+
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    max-width: 580px;
+    margin-top: 40px;
+  }
+  .step {
+    display: flex;
+    gap: 20px;
+    padding: 24px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+  .step:last-child { border-bottom: none; }
+  .step-num-big {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgba(255,255,255,0.06);
+    line-height: 1;
+    flex-shrink: 0;
+    width: 48px;
+    letter-spacing: -0.04em;
+  }
+  .step-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 6px;
+  }
+  .step-desc {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.4);
+    line-height: 1.65;
+    font-weight: 300;
+  }
+
+  /* ── SOCIAL PROOF ── */
+  .proof {
+    background: #F2F0EB;
+    padding: 72px 32px;
+  }
+  .testi-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 580px;
+    margin-top: 36px;
+  }
+  .testi {
+    background: #fff;
+    border-radius: 4px;
+    padding: 22px 20px;
+    border: 1px solid #E5E3DE;
+  }
+  .testi-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+  .testi-author-row { display: flex; align-items: center; gap: 10px; }
+  .testi-av {
+    width: 34px; height: 34px;
+    border-radius: 50%;
+    background: #111;
+    display: flex; align-items: center; justify-content: center;
+    color: #C8F135;
+    font-weight: 700;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+  }
+  .testi-name { font-size: 0.82rem; font-weight: 600; color: #111; }
+  .testi-meta { font-size: 0.68rem; color: #aaa; margin-top: 1px; }
+  .testi-stars { color: #111; font-size: 0.75rem; letter-spacing: 1px; }
+  .testi-text {
+    font-size: 0.88rem;
+    line-height: 1.7;
+    color: #444;
+    font-weight: 300;
+  }
+
+  /* ── PRICING ── */
+  .pricing {
+    background: #C8F135;
+    padding: 72px 32px;
+    position: relative;
+    overflow: hidden;
+  }
+  .pricing::before {
+    content: '$39';
+    position: absolute;
+    font-size: 30vw;
+    font-weight: 700;
+    color: rgba(0,0,0,0.04);
+    right: -4vw;
+    bottom: -4vw;
+    line-height: 1;
+    pointer-events: none;
+  }
+  .pricing .section-num { color: rgba(0,0,0,0.3); }
+  .pricing .section-title { color: #111; max-width: 580px; }
+  .pricing-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 480px;
+    margin: 28px 0 36px;
+  }
+  .pricing-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #111;
+  }
+  .pricing-item .dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: #111;
+    flex-shrink: 0;
+  }
+  .pricing-cta {
+    display: block;
+    background: #111;
+    color: #C8F135;
+    text-decoration: none;
+    padding: 18px 36px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-radius: 2px;
+    max-width: 400px;
+    text-align: center;
+    transition: all 0.2s;
+    position: relative;
+    z-index: 2;
+  }
+  .pricing-cta:hover { background: #222; transform: translateY(-1px); }
+  .pricing-cta-sub {
+    font-size: 0.7rem;
+    color: rgba(0,0,0,0.4);
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: #111;
+    padding: 28px 32px;
+    text-align: center;
+    color: rgba(255,255,255,0.2);
+    font-size: 0.65rem;
+    line-height: 1.8;
+  }
+  footer a { color: rgba(255,255,255,0.35); }
+
+  /* Sticky mobile CTA */
+  .sticky-cta {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    background: #C8F135;
+    padding: 14px 20px;
+    text-align: center;
+    z-index: 999;
+    display: none;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
+  }
+  .sticky-cta a {
+    color: #111;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .sticky-cta-sub { font-size: 0.62rem; color: rgba(0,0,0,0.45); margin-top: 2px; }
+
+  @media (max-width: 600px) {
+    .sticky-cta { display: block; }
+    body { padding-bottom: 68px; }
+    .feature-cards { grid-template-columns: 1fr; }
+    .hero-stats { gap: 12px; }
+    .hero-stat-num { font-size: 1.4rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="topbar">
+  Only $39 · <span>90-Day Money-Back Guarantee</span> · Instant Digital Access
+</div>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-bg-num">7</div>
+  <div class="hero-line"></div>
+  <div class="hero-label">Theta Wave Audio Program</div>
+  <h1>
+    Clearer mind.
+    <span class="accent">7 minutes.</span>
+  </h1>
+  <p class="hero-sub">The Genius Wave uses theta wave audio technology to put your brain in a state of deep focus and mental clarity — every single morning, in just one short session.</p>
+
+  <a href="https://tinyurl.com/3h4ve9jn" class="hero-cta">Get Instant Access — $39 →</a>
+  <p class="hero-cta-sub">🔒 Secure checkout · Instant download · 90-day guarantee</p>
+
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <div class="hero-stat-num">7</div>
+      <div class="hero-stat-label">Mins a day</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">$39</div>
+      <div class="hero-stat-label">One time</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">90</div>
+      <div class="hero-stat-label">Day guarantee</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">★4.9</div>
+      <div class="hero-stat-label">Rating</div>
+    </div>
+  </div>
+</section>
+
+<!-- What it is -->
+<section class="what">
+  <div class="section-num">01 — What it does</div>
+  <h2 class="section-title">Your brain has a peak state. Most people never reach it.</h2>
+  <p class="section-body">Theta waves — the brain frequency linked to deep focus, creativity, and sharp thinking — are rarely accessed in modern life. The Genius Wave changes that. Press play, put on headphones, and let the audio do the rest.</p>
+
+  <div class="feature-cards">
+    <div class="feature-card">
+      <span class="feature-card-icon">🎯</span>
+      <div class="feature-card-title">Sharper Focus</div>
+      <div class="feature-card-desc">Get into deep concentration faster and stay there without fighting distraction.</div>
+    </div>
+    <div class="feature-card">
+      <span class="feature-card-icon">💡</span>
+      <div class="feature-card-title">Mental Clarity</div>
+      <div class="feature-card-desc">Cut through brain fog and feel like your thoughts are organized and flowing.</div>
+    </div>
+    <div class="feature-card">
+      <span class="feature-card-icon">✨</span>
+      <div class="feature-card-title">Creative Flow</div>
+      <div class="feature-card-desc">Access the same mental state linked to peak creative and problem-solving performance.</div>
+    </div>
+    <div class="feature-card">
+      <span class="feature-card-icon">😌</span>
+      <div class="feature-card-title">Calm & Grounded</div>
+      <div class="feature-card-desc">Start the day centered instead of scattered. A daily mental reset in 7 minutes.</div>
+    </div>
+  </div>
+</section>
+
+<!-- How it works -->
+<section class="how">
+  <div class="section-num">02 — How it works</div>
+  <h2 class="section-title">Three steps.<br><span class="accent">That's literally it.</span></h2>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-num-big">01</div>
+      <div>
+        <div class="step-title">Download instantly after purchase</div>
+        <div class="step-desc">No shipping. No waiting. You get immediate access to your audio file the moment you complete your order.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num-big">02</div>
+      <div>
+        <div class="step-title">Put on headphones and press play</div>
+        <div class="step-desc">Once a day — morning, evening, whenever. Sit back, put on any headphones, and listen to the 7-minute session.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num-big">03</div>
+      <div>
+        <div class="step-title">Feel the shift — no effort required</div>
+        <div class="step-desc">The theta wave frequencies guide your brain into a deep focus state automatically. You don't have to do anything except listen.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Social Proof -->
+<section class="proof">
+  <div class="section-num">03 — Real people</div>
+  <h2 class="section-title">What people are saying after trying it.</h2>
+
+  <div class="testi-stack">
+    <div class="testi">
+      <div class="testi-top">
+        <div class="testi-author-row">
+          <div class="testi-av">J</div>
+          <div>
+            <div class="testi-name">James K.</div>
+            <div class="testi-meta">Verified Buyer · Chicago, IL</div>
+          </div>
+        </div>
+        <div class="testi-stars">★★★★★</div>
+      </div>
+      <div class="testi-text">"I've tried everything. Nothing gave me the kind of mental clarity I get from 7 minutes of this. It's now the first thing I do every morning."</div>
+    </div>
+    <div class="testi">
+      <div class="testi-top">
+        <div class="testi-author-row">
+          <div class="testi-av">S</div>
+          <div>
+            <div class="testi-name">Sarah M.</div>
+            <div class="testi-meta">Verified Buyer · Austin, TX</div>
+          </div>
+        </div>
+        <div class="testi-stars">★★★★★</div>
+      </div>
+      <div class="testi-text">"Skeptical at first. Two weeks in and the mental fog I thought was just normal life has basically disappeared. Sharper at work than I've been in years."</div>
+    </div>
+    <div class="testi">
+      <div class="testi-top">
+        <div class="testi-author-row">
+          <div class="testi-av">M</div>
+          <div>
+            <div class="testi-name">Marcus T.</div>
+            <div class="testi-meta">Verified Buyer · New York, NY</div>
+          </div>
+        </div>
+        <div class="testi-stars">★★★★★</div>
+      </div>
+      <div class="testi-text">"Non-negotiable part of my morning now. The difference in how I think and focus throughout the day is significant. Recommended it to everyone I know."</div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section class="pricing">
+  <div class="section-num">04 — Get started</div>
+  <h2 class="section-title">No subscription. No supplements. Just $39.</h2>
+
+  <div class="pricing-details">
+    <div class="pricing-item"><div class="dot"></div>7-minute theta wave audio — instant digital access</div>
+    <div class="pricing-item"><div class="dot"></div>Works with any headphones on any device</div>
+    <div class="pricing-item"><div class="dot"></div>One-time payment — no recurring charges ever</div>
+    <div class="pricing-item"><div class="dot"></div>90-day money-back guarantee — no questions asked</div>
+    <div class="pricing-item"><div class="dot"></div>Keep everything even if you request a refund</div>
+  </div>
+
+  <a href="https://tinyurl.com/3h4ve9jn" class="pricing-cta">Yes — Get The Genius Wave for $39 →</a>
+  <p class="pricing-cta-sub">🔒 Secure checkout via ClickBank · Instant access · 90-day guarantee</p>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p style="margin-bottom:10px;color:rgba(255,255,255,0.35);font-size:0.72rem;">The Genius Wave™</p>
+  <p>*These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Individual results may vary. Testimonials may represent exceptional results.</p>
+  <p style="margin-top:10px;">This is an affiliate page. We may receive a commission if you purchase through links on this page. <a href="#">Privacy Policy</a> · <a href="#">Disclaimer</a> · <a href="#">Affiliate Disclosure</a></p>
+  <p style="margin-top:8px;">ClickBank® is a registered trademark of Click Sales, Inc., located in Boise, Idaho.</p>
+</footer>
+
+<!-- Sticky Mobile CTA -->
+<div class="sticky-cta">
+  <a href="https://tinyurl.com/3h4ve9jn">Get The Genius Wave — $39 →</a>
+  <div class="sticky-cta-sub">90-day guarantee · Instant access</div>
+</div>
+
+</body>
+</html>
